@@ -1,0 +1,181 @@
+.bukutamu {
+    min-height: auto;
+}
+
+.bukutamu form {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bukutamu form .box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.bukutamu form .box .input-buktam {
+    position: relative;
+    width: 49%;
+    margin: .8rem 0;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.bukutamu form .box .input-buktam input,
+.bukutamu form .pesan textarea {
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem; /*jarak tulisan sm kotak di bagian dalem*/
+    font-size: 1rem;
+    color: white;
+    background: transparent;
+    border-radius: .6rem;
+    border: .1rem solid gray;
+}
+
+.bukutamu form .box .input-buktam input::placeholder,
+.bukutamu form .pesan textarea::placeholder {
+    color: var(--text-color);
+}
+
+.bukutamu form .pesan {
+    position: relative;
+    margin: .8rem 0 2rem;
+    display: flex;
+}
+
+.bukutamu form .pesan textarea {
+    resize: none;
+}
+
+.bukutamu .btn {
+    width: 8rem;
+    height: 3rem;
+    font-size: 1rem;
+}
+
+.profil-image img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profil2-image img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profil-outline {
+    border: 2px solid gray; 
+    border-radius: 50%;
+    padding: 2px;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+  }
+  
+  .navbar .nav-item.dropdown {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar .nav-item.dropdown .dropdown-toggle {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar .nav-item.dropdown .profil2-image {
+    margin-right: 5px; 
+  }
+  
+
+.kartuProfil {
+    border:2px solid gray; 
+    background-color: transparent; 
+    width: auto;
+}
+
+
+@media screen and (max-width: 990px) {
+
+    #hero .row {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    #hero .col-lg-6 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    #hero img {
+        margin-top: 80px;
+        width: 300px;
+    }
+
+    .bukutamu .btn{
+        margin-bottom: 50px;
+    }
+
+    #profil .profil-image {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bukutamu form .box .input-buktam {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bukutamu form .box .input-buktam {
+        width: 100%;
+        margin: 0.8rem 0;
+    }
+
+    .bukutamu .btn{
+        margin-bottom: 50px;
+    }
+
+    .profil-image img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin: auto;
+    }
+
+    #jadwal .row {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #jadwal .col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #jadwal .card {
+        height: 100%;
+        width: 100%;
+    }
+}
