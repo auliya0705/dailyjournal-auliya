@@ -13,7 +13,7 @@ $epassword = password_hash($password, PASSWORD_DEFAULT);
 
 //untuk fungsi upload foto 
 if (isset($_FILES['foto']) && $_FILES['foto']['error'] === UPLOAD_ERR_OK) {
-    $target_dir = "uploads/";
+    $target_dir = "assets/img/";
     if (!is_dir($target_dir)) {
         mkdir($target_dir, 0777, true); // Buat folder jika belum ada
     }

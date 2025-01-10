@@ -65,7 +65,7 @@ include "koneksi.php";
 
                                 // Tampilkan informasi user
                                 echo '<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">';
-                                echo '<img src="uploads/' . $foto . '" alt="Foto Profil" style="border-radius: 50%; width: 30px; height: 30px; margin-right: 10px;">'; // Foto dengan gap
+                                echo '<img src="assets/img/' . $foto . '" alt="Foto Profil" style="border-radius: 50%; width: 30px; height: 30px; margin-right: 10px;">'; // Foto dengan gap
                                 echo '<span style="color: white;">' . $username . '</span>';
                                 echo '</a>';
                                 echo '<ul class="dropdown-menu" aria-labelledby="navbarDropdown"; border: none;">'; 
