@@ -22,7 +22,7 @@ if (!isset($_SESSION['username'])) {
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <!-- nav begin -->
     <nav class="navbar navbar-expand-sm text-center bg-dark p-2 sticky-top">
         <div class="container">
@@ -61,8 +61,8 @@ if (!isset($_SESSION['username'])) {
     </nav>
     <!-- nav end -->
     <!-- content begin -->
-    <section id="content" class="p-5">
-        <div class="container vh-100">
+    <section id="content" class="p-5 flex-grow-1">
+        <div class="container">
             <?php
                 if(isset($_GET['page'])){
             ?>
@@ -80,7 +80,7 @@ if (!isset($_SESSION['username'])) {
     </section>
     <!-- content end -->
     <!-- footer begin -->
-    <footer class="container-fluid text-center text-white bg-dark p-2 justify-content-center fixed-bottom">
+    <footer class="container-fluid text-center text-white bg-dark p-2 justify-content-center">
         <div>
             <a href="https://www.instagram.com/auliya.sn_" target="_blank"><i
                     class="bi bi-instagram h2 p-2 text-white"></i></a>

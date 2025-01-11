@@ -3,7 +3,6 @@
         <tr>
             <th>No</th>
             <th class="w-25">Username</th>
-            <th class="w-75">Password</th>
             <th class="w-25">Profil</th>
             <th class="w-25">Aksi</th>
         </tr>
@@ -13,7 +12,7 @@
         include "koneksi.php";
 
         $hlm = (isset($_POST['hlm'])) ? $_POST['hlm'] : 1;
-        $limit = 3;
+        $limit = 5;
         $limit_start = ($hlm - 1) * $limit;
         $no = $limit_start + 1;
 
@@ -27,7 +26,6 @@
             <td>
                 <strong><?= $row["username"] ?></strong>
             </td>
-            <td><?= $row["password"] ?></td>
             <td>
                 <?php
                                     if ($row["foto"] != '') {
